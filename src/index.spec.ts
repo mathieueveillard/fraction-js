@@ -17,9 +17,9 @@ describe("Fraction", function() {
     expect(actual).toEqual(expected);
   });
 
-  it("Should be able to multiply a fraction", function() {
+  it("Should be able to scale up a fraction", function() {
     const f = new Fraction(1, 2);
-    const actual = f.times(2);
+    const actual = f.scaleByMultiplication(2);
     const expected = new Fraction(2, 4);
     expect(actual).toEqual(expected);
   });
@@ -32,9 +32,9 @@ describe("Fraction", function() {
     expect(actual).toEqual(expected);
   });
 
-  it("Should be able to divide a fraction", function() {
+  it("Should be able to scale down a fraction", function() {
     const f = new Fraction(2, 4);
-    const actual = f.dividedBy(2);
+    const actual = f.scaleByDivision(2);
     const expected = new Fraction(1, 2);
     expect(actual).toEqual(expected);
   });
